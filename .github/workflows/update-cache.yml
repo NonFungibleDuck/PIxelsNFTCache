@@ -1,0 +1,24 @@
+name: Update Cache
+on:
+  workflow_dispatch:
+    inputs:
+      clean:
+        required: true
+        type: boolean
+  schedule:
+    - cron: '*/15 * * * *'
+jobs:
+  update-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: 'node_modules'
+          key: 'cach2'
+      - run: npm install
+      - run: if [[ "${{ github.event.inputs.clean }}" == "true" ]]; then rm -rf public; fi
+      - run: npm start
+        env:
+          NFT_STORAGE_TOKEN: ${{ secrets.NFT_STORAGE_TOKEN }}
+      - uses: stefanzweifel/git-auto-commit-action@v4.13.1
