@@ -5,8 +5,8 @@ on:
       clean:
         required: true
         type: boolean
-  schedule:
-    - cron: '*/15 * * * *'
+  #schedule:
+  #  - cron: '1,16,31,46 * * * *'
 jobs:
   update-cache:
     runs-on: ubuntu-latest
