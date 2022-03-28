@@ -22,3 +22,7 @@ jobs:
         env:
           NFT_STORAGE_TOKEN: ${{ secrets.NFT_STORAGE_TOKEN }}
       - uses: stefanzweifel/git-auto-commit-action@v4.13.1
+        with:
+          commit_user_name: NonFungibleDuck
+          commit_user_email: <>
+          commit_author: NonFungibleDuck <>
