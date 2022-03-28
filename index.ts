@@ -110,6 +110,8 @@ async function run() {
   fs.writeFileSync(cacheFilePath, JSON.stringify(cache))
 
   console.log('== Finished cache update ==')
+
+  process.exit(0)
 }
 
 async function generateCanvasNFT(pixels, day) {
