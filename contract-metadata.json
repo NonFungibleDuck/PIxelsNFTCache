@@ -84,9 +84,9 @@
 				"inputs": [
 					{
 						"indexed": false,
-						"internalType": "uint256[]",
+						"internalType": "uint32[]",
 						"name": "pixelsToken",
-						"type": "uint256[]"
+						"type": "uint32[]"
 					},
 					{
 						"indexed": false,
@@ -165,32 +165,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "getAllPixels",
-				"outputs": [
-					{
-						"internalType": "uint8[65536]",
-						"name": "result",
-						"type": "uint8[65536]"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getAllPixelsOwnership",
-				"outputs": [
-					{
-						"internalType": "uint8[65536]",
-						"name": "result",
-						"type": "uint8[65536]"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -204,6 +178,54 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "count",
+						"type": "uint256"
+					}
+				],
+				"name": "getPixels",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "result",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "count",
+						"type": "uint256"
+					}
+				],
+				"name": "getPixelsOwnership",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "result",
+						"type": "bytes"
 					}
 				],
 				"stateMutability": "view",
@@ -225,9 +247,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256[]",
+						"internalType": "uint32[]",
 						"name": "pixelsToken",
-						"type": "uint256[]"
+						"type": "uint32[]"
 					},
 					{
 						"internalType": "bytes",
@@ -272,9 +294,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256[]",
+						"internalType": "uint32[]",
 						"name": "pixelsToken",
-						"type": "uint256[]"
+						"type": "uint32[]"
 					},
 					{
 						"internalType": "bytes",
@@ -411,9 +433,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256[]",
+						"internalType": "uint32[]",
 						"name": "pixelsToken",
-						"type": "uint256[]"
+						"type": "uint32[]"
 					},
 					{
 						"internalType": "bytes",
@@ -694,20 +716,12 @@
 				"dweb:/ipfs/QmZeBojmgXq821dL1TJKFb58B1FogM9jL3u7hXQ8hTEBKT"
 			]
 		},
-		"Base64.sol": {
-			"keccak256": "0xb1cd024d4d03a050c224ac1376901ea79299b008bfcd73da2e974d226561d7bb",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://ce128c9409898fa4fc03d5bb3739f9ec363316e027634b42ea3f7142f44256f4",
-				"dweb:/ipfs/QmXdxD4gTSDZkWJdMaMDBpv9ESRaPeVxF68wpzJr5TmW4P"
-			]
-		},
 		"PIxels.sol": {
-			"keccak256": "0x4e46fee90b5a1505317780b88298a8d09db885178ac2d794756f915c9f958ecb",
+			"keccak256": "0xfa53dbf5057c353d755933fb05f2cf445bba4c59c626aa83102de32b908b5240",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a7273bd28c4330f1f7fda2be9c93051759ca7a4600afd166b862caf13646fa65",
-				"dweb:/ipfs/Qmc4vsHM4hDFXeF499GPHum3bGJpodvxMAotV2o7Qe5xs5"
+				"bzz-raw://30df185bb457bcc0e6c8c6cb6f9665ccb2104b9016cc8a2f426b35cbfdb01274",
+				"dweb:/ipfs/QmRN6VJzZLsyJkkDUvhK3qBNTAnREFEubCXvQ1KLg6nGwS"
 			]
 		}
 	},
