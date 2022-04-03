@@ -7,10 +7,10 @@ import ContractMetadata from './contract-metadata.json'
 const publicFolder = 'public'
 const cacheFilePath = `${publicFolder}/cache.json`
 const canvasNftFolder = `${publicFolder}/canvasNFT`
-const contractAddress = '0x01419A742Ec2675c7d65e5f3104ef632bb957851'
-const contractCreationTimestamp = 1643649762
-const canvasWidth = 256
-const canvasHeight = 256
+const contractAddress = '0x24A5c951Ca2defB227881CF462A84F71F47877ae'
+const contractCreationTimestamp = 1648771200
+const canvasWidth = 1000
+const canvasHeight = 1000
 
 const colors = [
   { hex: '#000000', r: 0x00, g: 0x00, b: 0x00, name: 'Black' },
