@@ -85,7 +85,7 @@ async function run() {
         const colors = ethers.utils.arrayify(event.args.colors)
 
         for (let i = 0; i < event.args.pixelsToken.length; i++) {
-          const pixel = event.args.pixelsToken[i].toNumber()
+          const pixel = event.args.pixelsToken[i]
           const color = colors[i]
 
           cache.pixels[pixel] = color
